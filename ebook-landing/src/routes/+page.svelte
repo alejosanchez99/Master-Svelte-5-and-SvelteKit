@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { HeroSection } from "$components";
+  import { HeroSection, ChapterPreview } from "$components";
 </script>
 
 <HeroSection />
+<ChapterPreview />
