@@ -1,7 +1,7 @@
 import { error } from "@sveltejs/kit";
-import type { PageServerLoad } from "./$types";
+import type { PageLoad } from "./$types";
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageLoad = async ({ params }) => {
   const blogArticles = [
     {
       id: "0",
