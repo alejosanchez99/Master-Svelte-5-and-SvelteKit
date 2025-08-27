@@ -1,6 +1,13 @@
 <script lang="ts">
-  import { HeroSection, ChapterPreview } from "$components";
+  import {
+    AuthorSection,
+    ChapterPreview,
+    FaqSection,
+    HeroSection,
+  } from "$components";
 </script>
 
 <HeroSection />
 <ChapterPreview />
+<AuthorSection />
+<FaqSection />
