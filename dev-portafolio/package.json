@@ -21,6 +21,7 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
+		"@sanity/image-url": "^1.2.0",
 		"sanity": "^4.6.0"
 	}
 }

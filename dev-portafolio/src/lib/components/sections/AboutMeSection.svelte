@@ -2,17 +2,16 @@
   import { goto } from "$app/navigation";
   import image from "$assets/about-me.jpeg";
   import { Button, ExperienceTable, SectionHeadline } from "$components";
-  import type { DevExperience } from "$lib/types/sanity";
 
   interface AboutMeProps {
-    workExperience: DevExperience[];
+    workExperience: SanityWorkExperience[];
   }
 
   const onclick = () => {
     goto("#/contact-form");
   };
 
-  let { workExperience } = $props();
+  let { workExperience }: AboutMeProps = $props();
 </script>
 
 <section class="about-me mt-l">
