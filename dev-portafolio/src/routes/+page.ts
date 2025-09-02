@@ -7,11 +7,10 @@ export const load: PageLoad = async () => {
   );
 
   const rawProjects: SanityProject[] = await sanityClient.fetch(
-    "*[_type == 'project']"
+    "*[_type == 'project'] | order(dateAccomplished desc)"
   );
 
   const projects = rawProjects.map(processProjectEntries);
-
   return {
     workExperience,
     projects,
