@@ -9,8 +9,9 @@
   }
 
   interface ButtonProps extends BasicProps {
-    onclick: (e: MouseEvent) => void;
+    onclick?: (e: MouseEvent) => void;
     href?: never;
+    type?: "submit" | "button";
   }
 
   interface LinkProps extends BasicProps {
@@ -33,6 +34,7 @@
 
 {#if href}
   <a
+    class="btn"
     {href}
     class:btn-secondary={isSecondary}
     class:btn-danger={isDanger}
@@ -54,6 +56,14 @@
 {/if}
 
 <style>
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
   .btn {
     padding: 12px 24px;
     min-width: 230px;

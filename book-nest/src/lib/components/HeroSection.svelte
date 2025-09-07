@@ -1,5 +1,6 @@
 <script lang="ts">
   import heroImage from "$assets/hero.png";
+  import { Button } from "$components";
 </script>
 
 <section class="default-margin hero">
@@ -14,7 +15,7 @@
       Our app offers a beatifully design, easy-to-use interface that makes
       managing your book collection a joy.
     </h4>
-    <button>Sign up</button>
+    <Button href="/register">Sign up</Button>
   </div>
   <img class="hero-image" src={heroImage} alt="" />
 </section>
@@ -28,7 +29,7 @@
     margin-bottom: 80px;
   }
 
-  .hero-image{
+  .hero-image {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
