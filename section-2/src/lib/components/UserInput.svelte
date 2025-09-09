@@ -6,7 +6,6 @@
     userName: string;
   };
   let { userName, children }: UserInput = $props();
-  $inspect(userName);
 </script>
 
 <h1>Your username</h1>
